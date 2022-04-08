@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+        <title>AI Video Surveillance</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+      
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body background="b.jpg">
+<div class="btn btn-info heading">
+<h1 class="text-primary">A-I- Object Finder</h1>
+<h6 class="text-danger">If the text in the input matches the object shown in the camera, the object will be detected</h6>
+</div>
+<br>
+<br>
+<center>
+<button onclick="appear();" class="btn btn-success" id="please">Press here to make the text input appear</button>
+<br><br>
+<input id="input_thing" style="background-color: yellow; color: red;" placeholder="Please type here">
+<br>
+<br>
+<button class="btn btn-success" id="start" onclick="start();"><p style="color: yellow;">Start<p></button>
+<br><br>
+<button id="statusofmodel" class="btn btn-warning"></button>
+<button id="statusoffound" class="btn btn-success"></button>
+</center>
+</body> 
+<script src="main.js"></script>    
+</html>
